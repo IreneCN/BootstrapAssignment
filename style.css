@@ -7,8 +7,11 @@ body {
 	padding-bottom: 15px;
 }
 
-
-
+.modal-dialog       /*To centralize the display */
+{
+	display: flex;
+align-items:center;
+}
 
 /* Smartphones (portrait and landscape) ----------- */  /* obtained from: http://css-tricks.com/snippets/css/media-queries-for-standard-devices/*/
 @media only screen 
