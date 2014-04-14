@@ -20,3 +20,41 @@ function setNav(){
 		});
 }
 
+var video1 ="<iframe width='420' height='315' src='http://www.youtube.com/embed/dAnVA4_xhTk' frameborder='0' allowfullscreen></iframe>";
+
+
+$(document).ready(function(){
+	setNav1();
+});
+
+function setNav1(){
+	
+	$(".colosseum").on("click", function(){
+		$('#myModal').modal();
+		$('.modal-body').html(video1);
+	});
+	
+	$(".close").on("click", function(){
+		$(".modal-body").empty();
+		});
+}
+
+var video2 ="<iframe width='420' height='315' src='http://www.youtube.com/embed/QZ7T2shexEM' frameborder='0' allowfullscreen></iframe>";
+
+
+
+$(document).ready(function(){
+	setNav2();
+});
+
+function setNav2(){
+	
+	$(".pyramid").on("click", function(){
+		$('#myModal').modal();
+		$('.modal-body').html(video2);
+	});
+	
+	$(".close").on("click", function(){
+		$(".modal-body").empty();
+		});
+}
