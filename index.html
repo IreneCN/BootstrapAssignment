@@ -1,0 +1,99 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1"> <!-- This is a component of the Bootstrap html template that 
+			ensures proper rendering and responsiveness-->
+		<title>New Web Project</title>
+		
+		<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">  <!--This is the bootstrap cdn-->
+
+		
+		<link href="style.css" rel="stylesheet">  <!-- This is another component of the Bootstrap html template-->
+	</head>
+	<body>
+		
+		<div class="container">
+		<h1>Bootstrap Assignment: Wonders of the World</h1> 
+		
+		<div class="row">
+			<div class="col-md-4 col-sm-4 col-xs-6">       <!-- I'm putting columns within my rows and I'll insert images here -->
+				<h3>Taj Mahal</h3>
+				<p>The Taj Mahal is a white marble mausoleum located in Agra, Uttar Pradesh, India. It was built by Mughal emperor Shah Jahan in memory of
+					 his third wife, Mumtaz Mahal. It is widely recognized as "the jewel of Muslim art in India and one of the universally admired 
+					 masterpieces of the world's heritage."</p>
+<!-- Button trigger modal -->
+<!-- Indicates a successful or positive action -->
+<button type="button" class="btn btn-success tajmahal">View Video</button> <!--I'm creating the button name for my video -->
+
+			</div>
+			<div class="col-md-8 col-sm-8 col-xs-6">  
+				<img src="images/tajmahal.jpg"
+				class="img-responsive"/>
+			</div>
+			
+		</div> <!--end of row -->
+		
+		<div class="row">
+			<div class="col-md-4 col-sm-4 col-xs-6"> <!--I'm using the extra small, medium and small device grid classes so that my columns don't
+				just stack. Helps the layout to be more dynamic on mobile desktop and tablet -->
+				<h3>Colosseum</h3>
+				<p>The Colosseum is an elliptical amphitheatre in the centre of the city of Rome, Italy. Built of concrete and stone, it was the largest 
+					amphitheatre of the Roman Empire and is considered one of the greatest works of Roman architecture and engineering. It is the largest
+					amphitheatre in the world.</p>
+<button type="button" class="btn btn-success colosseum">View Video</button> <!--I'm creating the button name for my video -->
+			</div>
+			<div class="col-md-8 col-sm-8 col-xs-6">
+				<img src="images/colosseum.jpg"
+				class="img-responsive"/>
+			</div>
+		</div> <!--end of row -->
+		
+		<div class="row">
+			<div class="col-md-4 col-sm-4 col-xs-6">
+				<h3>Pyramid of Giza</h3>
+				<p>The Great Pyramid of Giza is the oldest and largest of the three pyramids in the Giza Necropolis bordering what is now El Giza, Egypt. 
+					It is the oldest of the Seven Wonders of the Ancient World, and the only one to remain largely intact.</p>
+<button type="button" class="btn btn-success pyramid">View Video</button> <!--I'm creating the button name for my video -->
+			</div>
+			<div class="col-md-8 col-sm-8 col-xs-6">
+				<img src="images/pyramid.jpg"
+				class="img-responsive"/>
+			</div>
+			
+		</div> <!--end of row -->
+		
+		
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script> <!--This is from the JQuery library and it's necessary for 
+			Bootstrap's javascript pulgins-->
+		<script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+		<script src="script.js"></script>
+		
+		</div> <!--end of container -->
+		
+
+<!-- This is a static modal that contains the videos -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title" id="myModalLabel">World Wonder</h4>
+      </div>
+      <div class="modal-body">
+      	
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+       
+      </div>
+    </div>
+  </div>
+</div>
+		
+	</body>
+</html>
+
